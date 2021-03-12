@@ -12,7 +12,12 @@ const encoded = btoa(heading + ':' + lower);
   providedIn: 'root'
 })
 export class ShipDataService {
-  // private readonly BASE_URL = environment.apiBaseUrl;
+  constructor(private router: Router, private http: HttpClient) { }
+  private readonly BASE_URL = environment.apiBaseURL;
+
+  getAmazon = () => {
+    return this.http.get(`${this.BASE_URL}/amazon`);
+  }
 
   // getShipments = () => {
   //   return this.http.get(`${this.BASE_URL}/shipments`);

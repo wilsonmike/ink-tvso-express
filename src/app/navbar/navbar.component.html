@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-dark">
-  <a class="navbar-brand" href="#">InkPressions | YFW</a>
+  <a class="navbar-brand" routerLink="/home">InkPressions | YFW</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -8,12 +8,23 @@
       <li class="nav-item active">
         <a class="nav-link" routerLink="/home">Home <span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/inventory-data">Inventory Data</a>
+      <li class="nav-item active">
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            View By Store
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" routerLink="/amazon">Amazon</a>
+            <a class="dropdown-item" routerLink="/etsy">Etsy SugarPlumLiam</a>
+            <a class="dropdown-item" routerLink="/tvso">TVSO</a>
+            <a class="dropdown-item" routerLink="/manual">Manual Orders</a>
+            <a class="dropdown-item" routerLink="/ucs">Ugly Christmas Sweater</a>
+            <a class="dropdown-item" routerLink="/ucs">Mask Market</a>
+
+          </div>
+        </div>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/pricing">Pricing</a>
-      </li>
+     
     </ul>
   </div>
 </nav>
