@@ -1,2 +1,24 @@
 <app-navbar></app-navbar>
-<p>amazon works!</p>
+<div class="container">
+    <div class="col-lg">
+        <div class="month-container">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle month-btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Change Month
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" routerLink="/amazon">January</a>
+                  <a class="dropdown-item" routerLink="/etsy">February</a>
+                </div>
+              </div>
+        </div>
+        <h6 class="store-header">Amazon January Total</h6>
+        <h2 class="store-totalx">$10,043.25</h2>
+    </div>
+</div>
+<div class="container">
+    <h6 class="by-store">Amazon January Orders</h6>
+</div>
+<div class="footer">
+    <app-footer></app-footer>
+</div>

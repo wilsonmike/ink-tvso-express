@@ -1,2 +1,86 @@
 /* font-family: 'Eczar', serif; */
 /* font-family: 'Roboto', sans-serif; */
+.container {
+    margin-top: 2%;
+}
+.col-md {
+    /* background-color: #373740; */
+    margin: 1%;
+    height: 15vh;
+    color: white;
+    padding: 2%;
+}
+.col-lg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #373740;
+    height: 20vh;
+    color: white;
+    padding: 2%;
+}
+.by-store {
+    font-size: .8rem;
+    color: rgb(245, 238, 238);
+    margin: 0 1%;
+    padding: 0;
+}
+.store-total {
+    font-family: Eczar, Roboto;
+    font-size: 2rem;
+    margin-top: 5%;
+}
+.store-totalx {
+    font-family: Eczar, Roboto;
+    font-size: 3rem;
+    margin-top: 1.5%;
+}
+.store-header {
+    font-size: 1rem;
+}
+.divider {
+    height: 1px;
+    background-color: #1EB980;
+    width: 100%;
+}
+.month-btn {
+    background-color: #1EB980;
+    outline: none;
+    border: none;
+    font-size: .8rem;
+}
+.month-container {
+    margin-left: auto;
+}
+.dropdown-menu {
+    color: white;
+    background-color: #3A4149;
+}
+.show {
+    width: auto;
+}
+.toggler {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+.dropdown-togglex {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+.dropdown-toggle:active {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+.dropdown-item {
+    color: white;
+}
+.dropdown-item:hover {
+    background-color: #1EB980;
+}
+.footer {
+    margin-top: 5%;
+}

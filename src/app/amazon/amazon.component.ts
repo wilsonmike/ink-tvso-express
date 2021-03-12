@@ -7,10 +7,13 @@ import { ShipDataService } from '../shipdata.service';
   styleUrls: ['./amazon.component.css']
 })
 export class AmazonComponent implements OnInit {
+  amazon: any = [];
   constructor(private service: ShipDataService, private route: ActivatedRoute) { }
   ngOnInit(): void {
     this.service.getAmazon().subscribe((res) => {
-      console.log(res);
+      this.amazon = res;
+      this.amazon.splice(0, 1);
+      console.log(this.amazon);
     });
   }
 }

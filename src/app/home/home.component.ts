@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { ShipDataService } from '../shipdata.service';
 
 @Component({
   selector: 'app-home',
@@ -6,10 +8,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+  amazon: any = [];
 
-  constructor() { }
+  constructor(private service: ShipDataService, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
+    this.service.getAmazon().subscribe((res) => {
+      this.amazon = res;
+      console.log(this.amazon);
+    });
   }
 
 }
