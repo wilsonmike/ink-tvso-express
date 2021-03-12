@@ -14,6 +14,7 @@ import { TvsoComponent } from './tvso/tvso.component';
 import { ManualComponent } from './manual/manual.component';
 import { UcsComponent } from './ucs/ucs.component';
 import { MaskmarketComponent } from './maskmarket/maskmarket.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { MaskmarketComponent } from './maskmarket/maskmarket.component';
     ManualComponent,
     UcsComponent,
     MaskmarketComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
