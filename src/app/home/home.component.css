@@ -1,12 +1,21 @@
 .container {
-    margin-top: 2%;
+    margin-top: 1%;
 }
 .col-md {
     /* background-color: #373740; */
-    margin: 1%;
+   
+    background-color: #373740;
     height: 15vh;
     color: white;
     padding: 2%;
+}
+.arrow {
+    display: flex;
+}
+.r-arrow {
+    height: 20px;
+    width: 20px;
+    margin-left: 2%;
 }
 .col-lg {
     display: flex;
@@ -36,6 +45,13 @@
 }
 .store-header {
     font-size: 1rem;
+}
+.store-header:hover {
+    color: #1EB980;
+}
+.store-link {
+    text-decoration: none;
+    color: white;
 }
 .divider {
     height: 1px;

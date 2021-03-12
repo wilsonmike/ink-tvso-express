@@ -13,7 +13,8 @@
                 </div>
               </div>
         </div>
-        <h6 class="store-header">January Total</h6>
+        <a class="store-link" href="#footer"><h6 class="store-header">January Total</h6></a>
+        
         <h2 class="store-totalx">$10,684.31</h2>
     </div>
 </div>
@@ -25,12 +26,18 @@
     <div class="container">
         <div class="row">
             <div class="col-md">
-              <h6 class="store-header">Amazon</h6>
+                <div class="arrow">
+                    <a class="store-link" routerLink="/amazon"><h6 class="store-header">Amazon</h6></a>
+                    <img class="r-arrow" src="./assets/rightarrow.svg" alt="">
+                </div>
               <h2 class="store-total">$10,043.25</h2>
               <div class="divider"></div>
             </div>
             <div class="col-md">
-                <h6 class="store-header">Etsy - SugarPlumLiam</h6>
+                <div class="arrow">
+                    <h6 class="store-header">Etsy - SugarPlumLiam</h6>
+                    <img class="r-arrow" src="./assets/rightarrow.svg" alt="">
+                </div>
                 <h2 class="store-total">$284.50</h2>
                 <div class="divider"></div>
             </div>
@@ -39,12 +46,19 @@
     <div class="container">
         <div class="row">
             <div class="col-md">
-              <h6 class="store-header">TVSO</h6>
+                <div class="arrow">
+                    <h6 class="store-header">TVSO</h6>
+                    <img class="r-arrow" src="./assets/rightarrow.svg" alt="">
+                </div>
               <h2 class="store-total">$12.00</h2>
               <div class="divider"></div>
             </div>
             <div class="col-md">
-                <h6 class="store-header">Manual Orders</h6>
+                <div class="arrow">
+                    <h6 class="store-header">Manual Orders</h6>
+                    <img class="r-arrow" src="./assets/rightarrow.svg" alt="">
+                </div>
+             
                 <h2 class="store-total">$141.52</h2>
                 <div class="divider"></div>
             </div>
@@ -65,6 +79,6 @@
           </div>
     </div>
 </div>
-<div class="footer">
+<div id="footer" class="footer">
     <app-footer></app-footer>
 </div>
