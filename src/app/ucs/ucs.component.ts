@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { ShipDataService } from '../shipdata.service';
 
 @Component({
   selector: 'app-ucs',
@@ -6,10 +8,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./ucs.component.css']
 })
 export class UcsComponent implements OnInit {
+  ucs: any = [];
 
-  constructor() { }
+  constructor(private service: ShipDataService, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
+    this.service.getUCS().subscribe((res) => {
+      this.ucs = res;
+      this.ucs.splice(0, 1);
+      console.log(this.ucs);
+    });
   }
 
 }

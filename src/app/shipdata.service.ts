@@ -18,6 +18,21 @@ export class ShipDataService {
   getAmazon = () => {
     return this.http.get(`${this.BASE_URL}/amazon`);
   }
+  getEtsy = () => {
+    return this.http.get(`${this.BASE_URL}/etsysugarplum`);
+  }
+  getTVSO = () => {
+    return this.http.get(`${this.BASE_URL}/tvso`);
+  }
+  getManual = () => {
+    return this.http.get(`${this.BASE_URL}/manualorders`);
+  }
+  getUCS = () => {
+    return this.http.get(`${this.BASE_URL}/ucs`);
+  }
+  getMask = () => {
+    return this.http.get(`${this.BASE_URL}/maskmarket`);
+  }
 
   // getShipments = () => {
   //   return this.http.get(`${this.BASE_URL}/shipments`);
