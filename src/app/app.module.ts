@@ -16,6 +16,7 @@ import { ManualComponent } from './manual/manual.component';
 import { UcsComponent } from './ucs/ucs.component';
 import { MaskmarketComponent } from './maskmarket/maskmarket.component';
 import { FooterComponent } from './footer/footer.component';
+import { FebtotalComponent } from './febtotal/febtotal.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { FooterComponent } from './footer/footer.component';
     UcsComponent,
     MaskmarketComponent,
     FooterComponent,
+    FebtotalComponent,
   ],
   imports: [
     BrowserModule,
