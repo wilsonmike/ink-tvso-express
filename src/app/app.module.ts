@@ -17,6 +17,10 @@ import { UcsComponent } from './ucs/ucs.component';
 import { MaskmarketComponent } from './maskmarket/maskmarket.component';
 import { FooterComponent } from './footer/footer.component';
 import { FebtotalComponent } from './febtotal/febtotal.component';
+import { AmazonfebComponent } from './amazonfeb/amazonfeb.component';
+import { EtsyfebComponent } from './etsyfeb/etsyfeb.component';
+import { UcsfebComponent } from './ucsfeb/ucsfeb.component';
+import { MaskmarketfebComponent } from './maskmarketfeb/maskmarketfeb.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +35,10 @@ import { FebtotalComponent } from './febtotal/febtotal.component';
     MaskmarketComponent,
     FooterComponent,
     FebtotalComponent,
+    AmazonfebComponent,
+    EtsyfebComponent,
+    UcsfebComponent,
+    MaskmarketfebComponent,
   ],
   imports: [
     BrowserModule,

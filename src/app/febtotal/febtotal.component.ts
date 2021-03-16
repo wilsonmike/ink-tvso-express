@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { ShipDataService } from '../shipdata.service';
 
 @Component({
   selector: 'app-febtotal',
@@ -7,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FebtotalComponent implements OnInit {
 
-  constructor() { }
+  constructor(private service: ShipDataService, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
   }

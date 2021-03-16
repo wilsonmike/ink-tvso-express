@@ -48,10 +48,7 @@
     background-color: #1EB980;
     outline: none;
     border: none;
-    font-size: 1rem;
-}
-.month-btn:hover {
-    background-color: #33333D;
+    font-size: .8rem;
 }
 .month-container {
     margin-left: auto;

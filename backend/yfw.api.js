@@ -47,6 +47,31 @@ yfw.get('/maskmarket', function(req,res) {
         res.json(response.rows);
     });
 })
+
+yfw.get('/amazonfeb', function(req,res) {
+    let query = `select * from amazonfeb`;
+    pool.query(query).then((response) => {
+        res.json(response.rows);
+    });
+})
+yfw.get('/etsyfeb', function(req,res) {
+    let query = `select * from etsyfeb`;
+    pool.query(query).then((response) => {
+        res.json(response.rows);
+    });
+})
+yfw.get('/ucsfeb', function(req,res) {
+    let query = `select * from ucsfeb`;
+    pool.query(query).then((response) => {
+        res.json(response.rows);
+    });
+})
+yfw.get('/maskmarketfeb', function(req,res) {
+    let query = `select * from maskmarketfeb`;
+    pool.query(query).then((response) => {
+        res.json(response.rows);
+    });
+})
 // dirt.get('/', function(req,res) {
 //     let query = `select * from tdlshippedorders`;
 //     pool.query(query).then((response) => {

@@ -1,0 +1,36 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <div class="col-lg">
+        <div class="month-container">
+            <button class="btn btn-secondary month-btn" routerLink="/febtotal">Back</button>
+        </div>
+        <h6 class="store-header">Etsy SugarPlumLiam February Total</h6>
+        <h2 class="store-totalx">$260.50</h2>
+    </div>
+</div>
+<div class="container">
+    <h6 class="by-store">Etsy SugarPlumLiam Feb Orders</h6>
+</div>
+<div class="container">
+    <div class="headers">
+        <span>Item SKU</span>
+        <span>Item Quantity</span>
+        <span>Item Cost</span>
+        <span>Sum of Quantity</span>
+    </div>
+    <div class="main-table">
+            <div *ngFor="let item of etsyFeb; let i = index">
+            <mat-card class="item-content">
+                <li class="order-list">{{item.itemsku}}</li>
+                <li class="order-list">{{item.itemqty}}</li>
+                <li class="order-list">{{item.costitem}}</li>
+                <li class="order-list">{{item.sumtotal}}</li>
+            </mat-card>
+        </div>
+</div>
+
+<div class="footer">
+    <app-footer></app-footer>
+</div>
+
+
