@@ -65,12 +65,6 @@
 
 @media only screen and (min-width: 769px) {
     
-    .navbar-nav {
-        display: flex;
-        margin-left: 55%;
-        color: white;
-        text-decoration: none;
-    }
     .dropdown-item {
         color: white;
         padding: 10%;
@@ -82,7 +76,7 @@
     }
     .navbar-nav {
         display: flex;
-        margin-left: 55%;
+        margin-left: 65%;
         color: white;
         text-decoration: none;
     }
