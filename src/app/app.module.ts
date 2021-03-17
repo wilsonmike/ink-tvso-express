@@ -22,6 +22,7 @@ import { EtsyfebComponent } from './etsyfeb/etsyfeb.component';
 import { UcsfebComponent } from './ucsfeb/ucsfeb.component';
 import { MaskmarketfebComponent } from './maskmarketfeb/maskmarketfeb.component';
 import { CostumeagentComponent } from './costumeagent/costumeagent.component';
+import { ManualfebComponent } from './manualfeb/manualfeb.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { CostumeagentComponent } from './costumeagent/costumeagent.component';
     UcsfebComponent,
     MaskmarketfebComponent,
     CostumeagentComponent,
+    ManualfebComponent,
   ],
   imports: [
     BrowserModule,

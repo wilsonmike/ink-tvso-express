@@ -36,6 +36,9 @@ export class ShipDataService {
   getCostumeAgent = () => {
     return this.http.get(`${this.BASE_URL}/costumeagent`);
   }
+  getManualFeb = () => {
+    return this.http.get(`${this.BASE_URL}/manualfeb`);
+  }
   getAmazonFeb = () => {
     return this.http.get(`${this.BASE_URL}/amazonfeb`);
   }

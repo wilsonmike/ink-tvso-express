@@ -61,6 +61,12 @@ yfw.get('/amazonfeb', function(req,res) {
         res.json(response.rows);
     });
 })
+yfw.get('/manualfeb', function(req,res) {
+    let query = `select * from manualfeb`;
+    pool.query(query).then((response) => {
+        res.json(response.rows);
+    });
+})
 yfw.get('/etsyfeb', function(req,res) {
     let query = `select * from etsyfeb`;
     pool.query(query).then((response) => {
