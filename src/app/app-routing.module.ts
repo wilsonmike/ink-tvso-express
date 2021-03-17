@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AmazonComponent } from './amazon/amazon.component';
 import { AmazonfebComponent } from './amazonfeb/amazonfeb.component';
+import { CostumeagentComponent } from './costumeagent/costumeagent.component';
 import { EtsyComponent } from './etsy/etsy.component';
 import { EtsyfebComponent } from './etsyfeb/etsyfeb.component';
 import { FebtotalComponent } from './febtotal/febtotal.component';
@@ -26,6 +27,7 @@ const routes: Routes = [
   { path: 'amazonfeb', component: AmazonfebComponent },
   { path: 'maskfeb', component: MaskmarketfebComponent },
   { path: 'ucsfeb', component: UcsfebComponent },
+  { path: 'costumeagent', component: CostumeagentComponent },
   { path: '',   redirectTo: '/home', pathMatch: 'full' }, // redirect to `first-component`
   { path: '**', component: HomeComponent },  // Wildcard route for a 404 page
 ];
