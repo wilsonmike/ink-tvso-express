@@ -33,6 +33,9 @@ export class ShipDataService {
   getMask = () => {
     return this.http.get(`${this.BASE_URL}/maskmarket`);
   }
+  getCostumeAgent = () => {
+    return this.http.get(`${this.BASE_URL}/costumeagent`);
+  }
   getAmazonFeb = () => {
     return this.http.get(`${this.BASE_URL}/amazonfeb`);
   }

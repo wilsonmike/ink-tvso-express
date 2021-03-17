@@ -48,6 +48,13 @@ yfw.get('/maskmarket', function(req,res) {
     });
 })
 
+yfw.get('/costumeagent', function(req,res) {
+    let query = `select * from costumeagent`;
+    pool.query(query).then((response) => {
+        res.json(response.rows);
+    });
+})
+
 yfw.get('/amazonfeb', function(req,res) {
     let query = `select * from amazonfeb`;
     pool.query(query).then((response) => {
