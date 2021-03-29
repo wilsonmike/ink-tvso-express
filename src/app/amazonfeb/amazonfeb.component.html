@@ -5,7 +5,7 @@
             <button class="btn btn-secondary month-btn" routerLink="/febtotal">Back</button>
         </div>
         <h6 class="store-header">Amazon February Total</h6>
-        <h2 class="store-totalx">$12,969.58</h2>
+        <h2 class="store-totalx">$13,203.48</h2>
     </div>
 </div>
 <div class="container">
@@ -25,9 +25,9 @@
             <div *ngFor="let item of amazonfeb | filter:term; let i = index">
             <mat-card class="item-content">
                 <li class="order-list">{{item.itemsku}}</li>
-                <li class="order-list">{{item.itemqty}}</li>
-                <li class="order-list">{{item.costitem}}</li>
-                <li class="order-list">{{item.sumtotal}}</li>
+                <li class="order-list">{{item.sumofitem}}</li>
+                <li class="order-list">{{item.costofitem}}</li>
+                <li class="order-list">{{item.sumofall}}</li>
             </mat-card>
         </div>
 </div>
