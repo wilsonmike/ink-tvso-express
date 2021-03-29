@@ -9,6 +9,7 @@ import { ShipDataService } from '../shipdata.service';
 })
 export class EtsyComponent implements OnInit {
   etsy: any = [];
+  term = '';
 
   constructor(private service: ShipDataService, private route: ActivatedRoute) { }
 

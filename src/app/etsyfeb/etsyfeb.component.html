@@ -12,6 +12,9 @@
     <h6 class="by-store">Etsy SugarPlumLiam Feb Orders</h6>
 </div>
 <div class="container">
+    <div>
+        <input class="input" type="text" [(ngModel)]="term" placeholder="Search Order Number">
+      </div>
     <div class="headers">
         <span>Item SKU</span>
         <span>Item Quantity</span>
@@ -19,7 +22,7 @@
         <span>Sum of Quantity</span>
     </div>
     <div class="main-table">
-            <div *ngFor="let item of etsyFeb; let i = index">
+            <div *ngFor="let item of etsyFeb | filter:term ; let i = index">
             <mat-card class="item-content">
                 <li class="order-list">{{item.itemsku}}</li>
                 <li class="order-list">{{item.itemqty}}</li>

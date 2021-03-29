@@ -9,6 +9,7 @@ import { ShipDataService } from '../shipdata.service';
 })
 export class UcsComponent implements OnInit {
   ucs: any = [];
+  term = '';
 
   constructor(private service: ShipDataService, private route: ActivatedRoute) { }
 

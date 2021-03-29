@@ -9,6 +9,7 @@ import { ShipDataService } from '../shipdata.service';
 })
 export class MaskmarketComponent implements OnInit {
   mask: any = [];
+  term = '';
 
   constructor(private service: ShipDataService, private route: ActivatedRoute) { }
 

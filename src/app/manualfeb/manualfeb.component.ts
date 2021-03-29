@@ -9,6 +9,7 @@ import { ShipDataService } from '../shipdata.service';
 })
 export class ManualfebComponent implements OnInit {
   manualfeb: any = [];
+  term = '';
 
   constructor(private service: ShipDataService, private route: ActivatedRoute) { }
 

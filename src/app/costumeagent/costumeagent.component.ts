@@ -9,6 +9,7 @@ import { ShipDataService } from '../shipdata.service';
 })
 export class CostumeagentComponent implements OnInit {
   costume: any = [];
+  term = '';
 
   constructor(private service: ShipDataService, private route: ActivatedRoute) { }
 

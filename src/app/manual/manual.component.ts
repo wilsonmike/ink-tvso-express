@@ -9,6 +9,7 @@ import { ShipDataService } from '../shipdata.service';
 })
 export class ManualComponent implements OnInit {
   manual: any = [];
+  term = '';
 
   constructor(private service: ShipDataService, private route: ActivatedRoute) { }
 
