@@ -110,3 +110,13 @@
     font-size: 16px;
     margin: 5% 5% 2% 5%;
 }
+.input {
+    margin-top: 5%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid white;
+    width: 30%;
+    color: white;
+    font-size: 18px;
+}

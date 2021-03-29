@@ -28,6 +28,7 @@
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "material-components-web": "^10.0.0",
+    "ng2-search-filter": "^0.5.1",
     "pg": "^8.5.1",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",

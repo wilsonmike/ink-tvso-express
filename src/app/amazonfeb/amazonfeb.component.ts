@@ -9,6 +9,7 @@ import { ShipDataService } from '../shipdata.service';
 })
 export class AmazonfebComponent implements OnInit {
   amazonfeb: any = [];
+  term = '';
 
   constructor(private service: ShipDataService, private route: ActivatedRoute) { }
 

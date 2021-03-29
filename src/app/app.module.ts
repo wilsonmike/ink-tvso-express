@@ -23,6 +23,8 @@ import { UcsfebComponent } from './ucsfeb/ucsfeb.component';
 import { MaskmarketfebComponent } from './maskmarketfeb/maskmarketfeb.component';
 import { CostumeagentComponent } from './costumeagent/costumeagent.component';
 import { ManualfebComponent } from './manualfeb/manualfeb.component';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -51,7 +53,9 @@ import { ManualfebComponent } from './manualfeb/manualfeb.component';
     BrowserAnimationsModule,
     NgbModule,
     MatDividerModule,
-    MatCardModule
+    MatCardModule,
+    Ng2SearchPipeModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

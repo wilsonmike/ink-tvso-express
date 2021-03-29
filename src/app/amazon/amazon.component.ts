@@ -8,6 +8,7 @@ import { ShipDataService } from '../shipdata.service';
 })
 export class AmazonComponent implements OnInit {
   amazon: any = [];
+  term = '';
   constructor(private service: ShipDataService, private route: ActivatedRoute) { }
   ngOnInit(): void {
     this.service.getAmazon().subscribe((res) => {
