@@ -17,7 +17,6 @@ export class ManualComponent implements OnInit {
     this.service.getManual().subscribe((res) => {
       this.manual = res;
       this.manual.splice(0, 1);
-      console.log(this.manual);
     });
   }
 

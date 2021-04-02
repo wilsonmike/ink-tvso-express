@@ -17,7 +17,6 @@ export class MaskmarketfebComponent implements OnInit {
     this.service.getMask().subscribe((res) => {
       this.maskfeb = res;
       this.maskfeb.splice(0, 1);
-      console.log(this.maskfeb);
     });
   }
 

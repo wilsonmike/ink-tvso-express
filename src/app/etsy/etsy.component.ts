@@ -17,7 +17,6 @@ export class EtsyComponent implements OnInit {
     this.service.getEtsy().subscribe((res) => {
       this.etsy = res;
       this.etsy.splice(0, 1);
-      console.log(this.etsy);
     });
   }
 

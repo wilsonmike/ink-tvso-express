@@ -18,7 +18,6 @@ export class AmazonfebComponent implements OnInit {
       this.amazonfeb = res;
       this.amazonfeb.splice(0, 1);
       this.amazonfeb.splice(0, 1);
-      console.log(this.amazonfeb);
     });
   }
 

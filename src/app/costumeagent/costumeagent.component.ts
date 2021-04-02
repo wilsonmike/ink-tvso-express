@@ -17,7 +17,6 @@ export class CostumeagentComponent implements OnInit {
     this.service.getCostumeAgent().subscribe((res) => {
       this.costume = res;
       this.costume.splice(0, 1);
-      console.log(this.costume);
     });
   }
 

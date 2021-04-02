@@ -17,7 +17,6 @@ export class UcsComponent implements OnInit {
     this.service.getUCS().subscribe((res) => {
       this.ucs = res;
       this.ucs.splice(0, 1);
-      console.log(this.ucs);
     });
   }
 

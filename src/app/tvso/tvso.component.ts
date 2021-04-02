@@ -17,7 +17,6 @@ export class TvsoComponent implements OnInit {
     this.service.getTVSO().subscribe((res) => {
       this.etsy = res;
       this.etsy.splice(0, 1);
-      console.log(this.etsy);
     });
   }
 

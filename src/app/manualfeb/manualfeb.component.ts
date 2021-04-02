@@ -17,7 +17,6 @@ export class ManualfebComponent implements OnInit {
     this.service.getManualFeb().subscribe((res) => {
       this.manualfeb = res;
       this.manualfeb.splice(0, 1);
-      console.log(this.manualfeb);
     });
   }
 

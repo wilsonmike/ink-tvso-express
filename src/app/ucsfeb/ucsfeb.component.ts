@@ -18,7 +18,6 @@ export class UcsfebComponent implements OnInit {
       this.ucs = res;
       this.ucs.splice(0, 1);
       // this.etsyFeb.splice(0, 1);
-      console.log(this.ucs);
     });
   }
 

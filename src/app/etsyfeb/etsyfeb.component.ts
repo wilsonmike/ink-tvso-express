@@ -18,7 +18,6 @@ export class EtsyfebComponent implements OnInit {
       this.etsyFeb = res;
       this.etsyFeb.splice(0, 1);
       // this.etsyFeb.splice(0, 1);
-      console.log(this.etsyFeb);
     });
   }
 

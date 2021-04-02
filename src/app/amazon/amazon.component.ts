@@ -14,7 +14,6 @@ export class AmazonComponent implements OnInit {
     this.service.getAmazon().subscribe((res) => {
       this.amazon = res;
       this.amazon.splice(0, 1);
-      console.log(this.amazon);
     });
   }
 }
