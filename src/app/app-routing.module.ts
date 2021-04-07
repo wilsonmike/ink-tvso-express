@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AmazonComponent } from './amazon/amazon.component';
 import { AmazonfebComponent } from './amazonfeb/amazonfeb.component';
+import { AmazonmarchComponent } from './amazonmarch/amazonmarch.component';
 import { CostumeagentComponent } from './costumeagent/costumeagent.component';
 import { EtsyComponent } from './etsy/etsy.component';
 import { EtsyfebComponent } from './etsyfeb/etsyfeb.component';
@@ -9,6 +10,7 @@ import { FebtotalComponent } from './febtotal/febtotal.component';
 import { HomeComponent } from './home/home.component';
 import { ManualComponent } from './manual/manual.component';
 import { ManualfebComponent } from './manualfeb/manualfeb.component';
+import { MarchtotalComponent } from './marchtotal/marchtotal.component';
 import { MaskmarketComponent } from './maskmarket/maskmarket.component';
 import { MaskmarketfebComponent } from './maskmarketfeb/maskmarketfeb.component';
 import { TvsoComponent } from './tvso/tvso.component';
@@ -30,6 +32,8 @@ const routes: Routes = [
   { path: 'ucsfeb', component: UcsfebComponent },
   { path: 'manualfeb', component: ManualfebComponent },
   { path: 'costumeagent', component: CostumeagentComponent },
+  { path: 'amazonmarch', component: AmazonmarchComponent },
+  { path: 'marchtotal', component: MarchtotalComponent },
   { path: '',   redirectTo: '/home', pathMatch: 'full' }, // redirect to `first-component`
   { path: '**', component: HomeComponent },  // Wildcard route for a 404 page
 ];

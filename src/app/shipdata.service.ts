@@ -14,6 +14,7 @@ const encoded = btoa(heading + ':' + lower);
 export class ShipDataService {
   constructor(private router: Router, private http: HttpClient) { }
   private readonly BASE_URL = environment.apiBaseURL;
+  private readonly MARCH_URL = environment.apiMarch;
 
   getAmazon = () => {
     return this.http.get(`${this.BASE_URL}/amazon`);
@@ -51,19 +52,8 @@ export class ShipDataService {
   getMaskMarketFeb = () => {
     return this.http.get(`${this.BASE_URL}/maskmarketfeb`);
   }
-  // getShipments = () => {
-  //   return this.http.get(`${this.BASE_URL}/shipments`);
-  // }
-
-  // getLine = () => {
-  //   return this.http.get(`${this.BASE_URL}/lineitems`);
-  // }
-  // getLine1 = () => {
-  // tslint:disable-next-line:max-line-length
-  //   return this.http.get(`${this.shipstationBaseUrl}createDateStart=2021-01-01&storeId=78297&createDateEnd=2021-01-31&includeShipmentItems=true&pageSize=500&page=1`, {
-  //     headers: {
-  //         Authorization: 'Basic ' + encoded,
-  //     },
-  //   });
-  // }
+  // March Data
+  getAmazonMarch = () => {
+    return this.http.get(`${this.MARCH_URL}/amazon`);
+  }
 }

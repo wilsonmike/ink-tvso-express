@@ -6,6 +6,7 @@ export const environment = {
   production: false,
   // apiBaseURL : 'http://localhost:3000',
   apiBaseURL : 'https://iptvsojan.herokuapp.com',
+  apiMarch : 'https://tvsomarch.herokuapp.com',
 };
 
 /*
