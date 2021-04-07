@@ -68,4 +68,7 @@ export class ShipDataService {
   getMaskMarketMarch = () => {
     return this.http.get(`${this.MARCH_URL}/costumeagent`);
   }
+  getManualOrdersMarch = () => {
+    return this.http.get(`${this.MARCH_URL}/manualorders`);
+  }
 }
