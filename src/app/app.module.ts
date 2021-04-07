@@ -27,6 +27,8 @@ import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { FormsModule } from '@angular/forms';
 import { AmazonmarchComponent } from './amazonmarch/amazonmarch.component';
 import { MarchtotalComponent } from './marchtotal/marchtotal.component';
+import { EtsymarchComponent } from './etsymarch/etsymarch.component';
+import { TvsomarchComponent } from './tvsomarch/tvsomarch.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +51,8 @@ import { MarchtotalComponent } from './marchtotal/marchtotal.component';
     ManualfebComponent,
     AmazonmarchComponent,
     MarchtotalComponent,
+    EtsymarchComponent,
+    TvsomarchComponent,
   ],
   imports: [
     BrowserModule,
