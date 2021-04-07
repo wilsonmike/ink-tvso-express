@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { ShipDataService } from '../shipdata.service';
 
 @Component({
   selector: 'app-etsymarch',
@@ -6,10 +8,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./etsymarch.component.css']
 })
 export class EtsymarchComponent implements OnInit {
+  etsymarch: any = [];
+  term = '';
 
-  constructor() { }
+  constructor(private service: ShipDataService, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
+    this.service.getEtsyMarch().subscribe((res) => {
+      this.etsymarch = res;
+      this.etsymarch.splice(0, 1);
+      console.log(this.etsymarch);
+    });
   }
 
 }

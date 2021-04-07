@@ -56,4 +56,16 @@ export class ShipDataService {
   getAmazonMarch = () => {
     return this.http.get(`${this.MARCH_URL}/amazon`);
   }
+  getEtsyMarch = () => {
+    return this.http.get(`${this.MARCH_URL}/etsy`);
+  }
+  getTvsoMarch = () => {
+    return this.http.get(`${this.MARCH_URL}/tvso`);
+  }
+  getCostumeAgentMarch = () => {
+    return this.http.get(`${this.MARCH_URL}/costumeagent`);
+  }
+  getMaskMarketMarch = () => {
+    return this.http.get(`${this.MARCH_URL}/costumeagent`);
+  }
 }

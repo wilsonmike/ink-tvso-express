@@ -4,6 +4,7 @@ import { AmazonComponent } from './amazon/amazon.component';
 import { AmazonfebComponent } from './amazonfeb/amazonfeb.component';
 import { AmazonmarchComponent } from './amazonmarch/amazonmarch.component';
 import { CostumeagentComponent } from './costumeagent/costumeagent.component';
+import { CostumeagentmarchComponent } from './costumeagentmarch/costumeagentmarch.component';
 import { EtsyComponent } from './etsy/etsy.component';
 import { EtsyfebComponent } from './etsyfeb/etsyfeb.component';
 import { EtsymarchComponent } from './etsymarch/etsymarch.component';
@@ -14,6 +15,7 @@ import { ManualfebComponent } from './manualfeb/manualfeb.component';
 import { MarchtotalComponent } from './marchtotal/marchtotal.component';
 import { MaskmarketComponent } from './maskmarket/maskmarket.component';
 import { MaskmarketfebComponent } from './maskmarketfeb/maskmarketfeb.component';
+import { MaskmarketmarchComponent } from './maskmarketmarch/maskmarketmarch.component';
 import { TvsoComponent } from './tvso/tvso.component';
 import { TvsomarchComponent } from './tvsomarch/tvsomarch.component';
 import { UcsComponent } from './ucs/ucs.component';
@@ -35,9 +37,11 @@ const routes: Routes = [
   { path: 'manualfeb', component: ManualfebComponent },
   { path: 'costumeagent', component: CostumeagentComponent },
   { path: 'amazonmarch', component: AmazonmarchComponent },
-  { path: 'amazonmarch', component: EtsymarchComponent },
+  { path: 'etsymarch', component: EtsymarchComponent },
   { path: 'tvsomarch', component: TvsomarchComponent },
   { path: 'marchtotal', component: MarchtotalComponent },
+  { path: 'costumeagentmarch', component:  CostumeagentmarchComponent},
+  { path: 'maskmarketmarch', component:  MaskmarketmarchComponent},
   { path: '',   redirectTo: '/home', pathMatch: 'full' }, // redirect to `first-component`
   { path: '**', component: HomeComponent },  // Wildcard route for a 404 page
 ];

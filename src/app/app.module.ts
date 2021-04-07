@@ -29,6 +29,8 @@ import { AmazonmarchComponent } from './amazonmarch/amazonmarch.component';
 import { MarchtotalComponent } from './marchtotal/marchtotal.component';
 import { EtsymarchComponent } from './etsymarch/etsymarch.component';
 import { TvsomarchComponent } from './tvsomarch/tvsomarch.component';
+import { CostumeagentmarchComponent } from './costumeagentmarch/costumeagentmarch.component';
+import { MaskmarketmarchComponent } from './maskmarketmarch/maskmarketmarch.component';
 
 @NgModule({
   declarations: [
@@ -53,6 +55,8 @@ import { TvsomarchComponent } from './tvsomarch/tvsomarch.component';
     MarchtotalComponent,
     EtsymarchComponent,
     TvsomarchComponent,
+    CostumeagentmarchComponent,
+    MaskmarketmarchComponent,
   ],
   imports: [
     BrowserModule,

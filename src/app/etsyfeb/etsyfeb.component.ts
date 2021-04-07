@@ -17,7 +17,6 @@ export class EtsyfebComponent implements OnInit {
     this.service.getEtsyFeb().subscribe((res) => {
       this.etsyFeb = res;
       this.etsyFeb.splice(0, 1);
-      // this.etsyFeb.splice(0, 1);
     });
   }
 
