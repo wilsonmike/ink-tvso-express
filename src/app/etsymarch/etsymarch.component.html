@@ -25,9 +25,9 @@
             <div *ngFor="let item of etsymarch | filter:term ; let i = index">
             <mat-card class="item-content">
                 <li class="order-list">{{item.itemsku}}</li>
-                <li class="order-list">{{item.itemquantity}}</li>
-                <li class="order-list">{{item.priceitem}}</li>
-                <li class="order-list">{{item.sumofqty}}</li>
+                <li class="order-list">{{item.itemqty}}</li>
+                <li class="order-list">{{item.itemprice}}</li>
+                <li class="order-list">{{item.itemqtyprice}}</li>
             </mat-card>
         </div>
 </div>
