@@ -35,6 +35,7 @@ import { ManualordersmarchComponent } from './manualordersmarch/manualordersmarc
 import { ApriltotalComponent } from './apriltotal/apriltotal.component';
 import { AprilamazonComponent } from './aprilamazon/aprilamazon.component';
 import { ApriletsyComponent } from './apriletsy/apriletsy.component';
+import { ApriltvsoComponent } from './apriltvso/apriltvso.component';
 
 @NgModule({
   declarations: [
@@ -65,6 +66,7 @@ import { ApriletsyComponent } from './apriletsy/apriletsy.component';
     ApriltotalComponent,
     AprilamazonComponent,
     ApriletsyComponent,
+    ApriltvsoComponent,
   ],
   imports: [
     BrowserModule,

@@ -6,6 +6,7 @@ import { AmazonmarchComponent } from './amazonmarch/amazonmarch.component';
 import { AprilamazonComponent } from './aprilamazon/aprilamazon.component';
 import { ApriletsyComponent } from './apriletsy/apriletsy.component';
 import { ApriltotalComponent } from './apriltotal/apriltotal.component';
+import { ApriltvsoComponent } from './apriltvso/apriltvso.component';
 import { CostumeagentComponent } from './costumeagent/costumeagent.component';
 import { CostumeagentmarchComponent } from './costumeagentmarch/costumeagentmarch.component';
 import { EtsyComponent } from './etsy/etsy.component';
@@ -50,6 +51,7 @@ const routes: Routes = [
   { path: 'apriltotal', component:  ApriltotalComponent},
   { path: 'amazonapril', component:  AprilamazonComponent},
   { path: 'etsyapril', component:  ApriletsyComponent},
+  { path: 'tvsoapril', component:  ApriltvsoComponent},
   { path: '',   redirectTo: '/home', pathMatch: 'full' }, // redirect to `first-component`
   { path: '**', component: HomeComponent },  // Wildcard route for a 404 page
 ];
