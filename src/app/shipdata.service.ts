@@ -15,6 +15,7 @@ export class ShipDataService {
   constructor(private router: Router, private http: HttpClient) { }
   private readonly BASE_URL = environment.apiBaseURL;
   private readonly MARCH_URL = environment.apiMarch;
+  private readonly APRIL_URL = environment.apiApril;
 
   getAmazon = () => {
     return this.http.get(`${this.BASE_URL}/amazon`);
@@ -70,5 +71,24 @@ export class ShipDataService {
   }
   getManualOrdersMarch = () => {
     return this.http.get(`${this.MARCH_URL}/manualorders`);
+  }
+  // april
+  getAmazonApril = () => {
+    return this.http.get(`${this.APRIL_URL}/amazon`);
+  }
+  getEtsyApril = () => {
+    return this.http.get(`${this.APRIL_URL}/etsy`);
+  }
+  getTvsoApril = () => {
+    return this.http.get(`${this.APRIL_URL}/tvso`);
+  }
+  getCostumeAgentApril = () => {
+    return this.http.get(`${this.APRIL_URL}/costumeagent`);
+  }
+  getMaskMarketApril = () => {
+    return this.http.get(`${this.APRIL_URL}/costumeagent`);
+  }
+  getManualOrdersApril = () => {
+    return this.http.get(`${this.APRIL_URL}/manualorders`);
   }
 }
