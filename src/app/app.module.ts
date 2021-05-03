@@ -32,6 +32,8 @@ import { TvsomarchComponent } from './tvsomarch/tvsomarch.component';
 import { CostumeagentmarchComponent } from './costumeagentmarch/costumeagentmarch.component';
 import { MaskmarketmarchComponent } from './maskmarketmarch/maskmarketmarch.component';
 import { ManualordersmarchComponent } from './manualordersmarch/manualordersmarch.component';
+import { ApriltotalComponent } from './apriltotal/apriltotal.component';
+import { AprilamazonComponent } from './aprilamazon/aprilamazon.component';
 
 @NgModule({
   declarations: [
@@ -59,6 +61,8 @@ import { ManualordersmarchComponent } from './manualordersmarch/manualordersmarc
     CostumeagentmarchComponent,
     MaskmarketmarchComponent,
     ManualordersmarchComponent,
+    ApriltotalComponent,
+    AprilamazonComponent,
   ],
   imports: [
     BrowserModule,
