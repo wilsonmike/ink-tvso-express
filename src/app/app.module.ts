@@ -34,6 +34,7 @@ import { MaskmarketmarchComponent } from './maskmarketmarch/maskmarketmarch.comp
 import { ManualordersmarchComponent } from './manualordersmarch/manualordersmarch.component';
 import { ApriltotalComponent } from './apriltotal/apriltotal.component';
 import { AprilamazonComponent } from './aprilamazon/aprilamazon.component';
+import { ApriletsyComponent } from './apriletsy/apriletsy.component';
 
 @NgModule({
   declarations: [
@@ -63,6 +64,7 @@ import { AprilamazonComponent } from './aprilamazon/aprilamazon.component';
     ManualordersmarchComponent,
     ApriltotalComponent,
     AprilamazonComponent,
+    ApriletsyComponent,
   ],
   imports: [
     BrowserModule,

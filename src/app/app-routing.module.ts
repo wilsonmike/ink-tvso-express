@@ -3,6 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { AmazonComponent } from './amazon/amazon.component';
 import { AmazonfebComponent } from './amazonfeb/amazonfeb.component';
 import { AmazonmarchComponent } from './amazonmarch/amazonmarch.component';
+import { AprilamazonComponent } from './aprilamazon/aprilamazon.component';
+import { ApriletsyComponent } from './apriletsy/apriletsy.component';
 import { ApriltotalComponent } from './apriltotal/apriltotal.component';
 import { CostumeagentComponent } from './costumeagent/costumeagent.component';
 import { CostumeagentmarchComponent } from './costumeagentmarch/costumeagentmarch.component';
@@ -46,6 +48,8 @@ const routes: Routes = [
   { path: 'maskmarketmarch', component:  MaskmarketmarchComponent},
   { path: 'manualordersmarch', component:  ManualordersmarchComponent},
   { path: 'apriltotal', component:  ApriltotalComponent},
+  { path: 'amazonapril', component:  AprilamazonComponent},
+  { path: 'etsyapril', component:  ApriletsyComponent},
   { path: '',   redirectTo: '/home', pathMatch: 'full' }, // redirect to `first-component`
   { path: '**', component: HomeComponent },  // Wildcard route for a 404 page
 ];
