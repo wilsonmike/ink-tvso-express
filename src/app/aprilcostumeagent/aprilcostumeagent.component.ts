@@ -3,11 +3,11 @@ import { ActivatedRoute } from '@angular/router';
 import { ShipDataService } from '../shipdata.service';
 
 @Component({
-  selector: 'app-costumeagent',
-  templateUrl: './costumeagent.component.html',
-  styleUrls: ['./costumeagent.component.css']
+  selector: 'app-aprilcostumeagent',
+  templateUrl: './aprilcostumeagent.component.html',
+  styleUrls: ['./aprilcostumeagent.component.css']
 })
-export class CostumeagentComponent implements OnInit {
+export class AprilcostumeagentComponent implements OnInit {
   costume: any = [];
   term = '';
 
