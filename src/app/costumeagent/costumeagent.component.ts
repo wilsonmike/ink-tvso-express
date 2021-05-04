@@ -14,7 +14,7 @@ export class CostumeagentComponent implements OnInit {
   constructor(private service: ShipDataService, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
-    this.service.getCostumeAgentApril().subscribe((res) => {
+    this.service.getCostumeAgent().subscribe((res) => {
       this.costume = res;
       this.costume.splice(0, 1);
     });

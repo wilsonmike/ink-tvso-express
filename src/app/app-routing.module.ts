@@ -28,6 +28,7 @@ import { TvsoComponent } from './tvso/tvso.component';
 import { TvsomarchComponent } from './tvsomarch/tvsomarch.component';
 import { UcsComponent } from './ucs/ucs.component';
 import { UcsfebComponent } from './ucsfeb/ucsfeb.component';
+import { WirelessvisionComponent } from './wirelessvision/wirelessvision.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -58,6 +59,7 @@ const routes: Routes = [
   { path: 'costumeapril', component:  AprilcostumeagentComponent},
   { path: 'maskapril', component:  AprilmaskmarketComponent},
   { path: 'manualorderapril', component:  ManualorderaprilComponent},
+  { path: 'wireless', component:  WirelessvisionComponent},
   { path: '',   redirectTo: '/home', pathMatch: 'full' }, // redirect to `first-component`
   { path: '**', component: HomeComponent },  // Wildcard route for a 404 page
 ];

@@ -91,4 +91,7 @@ export class ShipDataService {
   getManualOrdersApril = () => {
     return this.http.get(`${this.APRIL_URL}/manualorders`);
   }
+  getWirelessApril = () => {
+    return this.http.get(`${this.APRIL_URL}/wireless`);
+  }
 }
