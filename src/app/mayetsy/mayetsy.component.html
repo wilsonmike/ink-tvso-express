@@ -4,12 +4,12 @@
         <div class="month-container">
             <button class="btn btn-secondary month-btn" routerLink="/maytotal">Back</button>
         </div>
-        <h6 class="store-header">Amazon May Total</h6>
-        <h2 class="store-totalx">$8,902.25</h2>
+        <h6 class="store-header">Etsy May Total</h6>
+        <h2 class="store-totalx">$410.00</h2>
     </div>
 </div>
 <div class="container">
-    <h6 class="by-store">Amazon May Orders</h6>
+    <h6 class="by-store">Etsy May Orders</h6>
 </div>
 <div class="container">
     <div>
@@ -22,7 +22,7 @@
         <span>Sum of Quantity</span>
     </div>
     <div class="main-table">
-            <div *ngFor="let item of mayAmazon | filter:term ; let i = index">
+            <div *ngFor="let item of mayEtsy | filter:term ; let i = index">
             <mat-card class="item-content">
                 <li class="order-list">{{item["Order - Number"]}}</li>
                 <li class="order-list">{{item["Item - SKU"]}}</li>
@@ -35,8 +35,3 @@
 <div class="footer">
     <app-footer></app-footer>
 </div>
-
-
-
-
-

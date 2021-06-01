@@ -42,6 +42,7 @@ import { ManualorderaprilComponent } from './manualorderapril/manualorderapril.c
 import { WirelessvisionComponent } from './wirelessvision/wirelessvision.component';
 import { MayamazonComponent } from './mayamazon/mayamazon.component';
 import { MaytotalComponent } from './maytotal/maytotal.component';
+import { MayetsyComponent } from './mayetsy/mayetsy.component';
 
 @NgModule({
   declarations: [
@@ -79,6 +80,7 @@ import { MaytotalComponent } from './maytotal/maytotal.component';
     WirelessvisionComponent,
     MayamazonComponent,
     MaytotalComponent,
+    MayetsyComponent,
   ],
   imports: [
     BrowserModule,
