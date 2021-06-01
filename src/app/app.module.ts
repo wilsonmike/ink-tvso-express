@@ -40,6 +40,8 @@ import { AprilcostumeagentComponent } from './aprilcostumeagent/aprilcostumeagen
 import { AprilmaskmarketComponent } from './aprilmaskmarket/aprilmaskmarket.component';
 import { ManualorderaprilComponent } from './manualorderapril/manualorderapril.component';
 import { WirelessvisionComponent } from './wirelessvision/wirelessvision.component';
+import { MayamazonComponent } from './mayamazon/mayamazon.component';
+import { MaytotalComponent } from './maytotal/maytotal.component';
 
 @NgModule({
   declarations: [
@@ -75,6 +77,8 @@ import { WirelessvisionComponent } from './wirelessvision/wirelessvision.compone
     AprilmaskmarketComponent,
     ManualorderaprilComponent,
     WirelessvisionComponent,
+    MayamazonComponent,
+    MaytotalComponent,
   ],
   imports: [
     BrowserModule,
