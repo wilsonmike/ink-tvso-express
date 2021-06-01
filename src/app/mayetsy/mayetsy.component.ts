@@ -7,12 +7,13 @@ import mayJson from '../mayetsy.json';
   styleUrls: ['./mayetsy.component.css']
 })
 export class MayetsyComponent implements OnInit {
-  mayEtsy: any = [];
+  mayEtsy: any = mayJson;
   term = '';
 
   constructor() { }
 
   ngOnInit(): void {
+    console.log(this.mayEtsy);
   }
 
 }
