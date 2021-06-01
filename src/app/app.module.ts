@@ -43,6 +43,7 @@ import { WirelessvisionComponent } from './wirelessvision/wirelessvision.compone
 import { MayamazonComponent } from './mayamazon/mayamazon.component';
 import { MaytotalComponent } from './maytotal/maytotal.component';
 import { MayetsyComponent } from './mayetsy/mayetsy.component';
+import { MaytvsoComponent } from './maytvso/maytvso.component';
 
 @NgModule({
   declarations: [
@@ -81,6 +82,7 @@ import { MayetsyComponent } from './mayetsy/mayetsy.component';
     MayamazonComponent,
     MaytotalComponent,
     MayetsyComponent,
+    MaytvsoComponent,
   ],
   imports: [
     BrowserModule,
