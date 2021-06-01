@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import mayamazonJson from '../zmayamazon.json';
 
 @Component({
   selector: 'app-mayamazon',
@@ -6,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./mayamazon.component.css']
 })
 export class MayamazonComponent implements OnInit {
+  mayAmazon: any = mayamazonJson;
+  term = '';
 
   constructor() { }
 
   ngOnInit(): void {
+    console.log(this.mayAmazon);
   }
 
 }
