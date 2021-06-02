@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import maydataJson from '../maytvso.json';
 
 @Component({
   selector: 'app-maytvso',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./maytvso.component.css']
 })
 export class MaytvsoComponent implements OnInit {
-  maytvso: any = [];
+  maytvso: any = maydataJson;
   term = '';
 
   constructor() { }
