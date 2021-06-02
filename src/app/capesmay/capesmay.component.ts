@@ -13,7 +13,6 @@ export class CapesmayComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    console.log(this.capesmay);
   }
 
 }

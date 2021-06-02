@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import maymaskJson from '../maymask.json';
 
 @Component({
   selector: 'app-maymask',
@@ -6,12 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./maymask.component.css']
 })
 export class MaymaskComponent implements OnInit {
-  maymask: any = [];
+  maymask: any = maymaskJson;
   term = '';
 
   constructor() { }
 
   ngOnInit(): void {
+    console.log(this.maymask);
   }
 
 }
