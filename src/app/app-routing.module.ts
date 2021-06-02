@@ -27,6 +27,7 @@ import { MaskmarketfebComponent } from './maskmarketfeb/maskmarketfeb.component'
 import { MaskmarketmarchComponent } from './maskmarketmarch/maskmarketmarch.component';
 import { MayamazonComponent } from './mayamazon/mayamazon.component';
 import { MayetsyComponent } from './mayetsy/mayetsy.component';
+import { MaymaskComponent } from './maymask/maymask.component';
 import { MaytotalComponent } from './maytotal/maytotal.component';
 import { MaytvsoComponent } from './maytvso/maytvso.component';
 import { TvsoComponent } from './tvso/tvso.component';
@@ -70,6 +71,7 @@ const routes: Routes = [
   { path: 'maytvso', component:  MaytvsoComponent},
   { path: 'capesmay', component:  CapesmayComponent},
   { path: 'wireless', component:  WirelessvisionComponent},
+  { path: 'maymask', component:  MaymaskComponent},
   { path: '',   redirectTo: '/home', pathMatch: 'full' }, // redirect to `first-component`
   { path: '**', component: HomeComponent },  // Wildcard route for a 404 page
 ];
