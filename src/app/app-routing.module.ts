@@ -19,6 +19,7 @@ import { FebtotalComponent } from './febtotal/febtotal.component';
 import { HomeComponent } from './home/home.component';
 import { ManualComponent } from './manual/manual.component';
 import { ManualfebComponent } from './manualfeb/manualfeb.component';
+import { ManualmayComponent } from './manualmay/manualmay.component';
 import { ManualorderaprilComponent } from './manualorderapril/manualorderapril.component';
 import { ManualordersmarchComponent } from './manualordersmarch/manualordersmarch.component';
 import { MarchtotalComponent } from './marchtotal/marchtotal.component';
@@ -72,6 +73,7 @@ const routes: Routes = [
   { path: 'capesmay', component:  CapesmayComponent},
   { path: 'wireless', component:  WirelessvisionComponent},
   { path: 'maymask', component:  MaymaskComponent},
+  { path: 'manmay', component:  ManualmayComponent},
   { path: '',   redirectTo: '/home', pathMatch: 'full' }, // redirect to `first-component`
   { path: '**', component: HomeComponent },  // Wildcard route for a 404 page
 ];
