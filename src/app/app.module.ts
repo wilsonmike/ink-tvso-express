@@ -44,6 +44,7 @@ import { MayamazonComponent } from './mayamazon/mayamazon.component';
 import { MaytotalComponent } from './maytotal/maytotal.component';
 import { MayetsyComponent } from './mayetsy/mayetsy.component';
 import { MaytvsoComponent } from './maytvso/maytvso.component';
+import { CapesmayComponent } from './capesmay/capesmay.component';
 
 @NgModule({
   declarations: [
@@ -83,6 +84,7 @@ import { MaytvsoComponent } from './maytvso/maytvso.component';
     MaytotalComponent,
     MayetsyComponent,
     MaytvsoComponent,
+    CapesmayComponent,
   ],
   imports: [
     BrowserModule,

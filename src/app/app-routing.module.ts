@@ -9,6 +9,7 @@ import { ApriletsyComponent } from './apriletsy/apriletsy.component';
 import { AprilmaskmarketComponent } from './aprilmaskmarket/aprilmaskmarket.component';
 import { ApriltotalComponent } from './apriltotal/apriltotal.component';
 import { ApriltvsoComponent } from './apriltvso/apriltvso.component';
+import { CapesmayComponent } from './capesmay/capesmay.component';
 import { CostumeagentComponent } from './costumeagent/costumeagent.component';
 import { CostumeagentmarchComponent } from './costumeagentmarch/costumeagentmarch.component';
 import { EtsyComponent } from './etsy/etsy.component';
@@ -67,6 +68,7 @@ const routes: Routes = [
   { path: 'maytotal', component:  MaytotalComponent},
   { path: 'mayetsy', component:  MayetsyComponent},
   { path: 'maytvso', component:  MaytvsoComponent},
+  { path: 'capesmay', component:  CapesmayComponent},
   { path: 'wireless', component:  WirelessvisionComponent},
   { path: '',   redirectTo: '/home', pathMatch: 'full' }, // redirect to `first-component`
   { path: '**', component: HomeComponent },  // Wildcard route for a 404 page
