@@ -17,6 +17,7 @@ import { EtsyfebComponent } from './etsyfeb/etsyfeb.component';
 import { EtsymarchComponent } from './etsymarch/etsymarch.component';
 import { FebtotalComponent } from './febtotal/febtotal.component';
 import { HomeComponent } from './home/home.component';
+import { JunetotalComponent } from './junetotal/junetotal.component';
 import { ManualComponent } from './manual/manual.component';
 import { ManualfebComponent } from './manualfeb/manualfeb.component';
 import { ManualmayComponent } from './manualmay/manualmay.component';
@@ -74,6 +75,7 @@ const routes: Routes = [
   { path: 'wireless', component:  WirelessvisionComponent},
   { path: 'maymask', component:  MaymaskComponent},
   { path: 'manmay', component:  ManualmayComponent},
+  { path: 'junetotal', component:  JunetotalComponent},
   { path: '',   redirectTo: '/home', pathMatch: 'full' }, // redirect to `first-component`
   { path: '**', component: HomeComponent },  // Wildcard route for a 404 page
 ];
