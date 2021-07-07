@@ -47,6 +47,7 @@ import { MaytvsoComponent } from './maytvso/maytvso.component';
 import { CapesmayComponent } from './capesmay/capesmay.component';
 import { MaymaskComponent } from './maymask/maymask.component';
 import { ManualmayComponent } from './manualmay/manualmay.component';
+import { JunetotalComponent } from './junetotal/junetotal.component';
 
 @NgModule({
   declarations: [
@@ -89,6 +90,7 @@ import { ManualmayComponent } from './manualmay/manualmay.component';
     CapesmayComponent,
     MaymaskComponent,
     ManualmayComponent,
+    JunetotalComponent,
   ],
   imports: [
     BrowserModule,
