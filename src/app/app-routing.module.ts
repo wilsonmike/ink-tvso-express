@@ -76,6 +76,7 @@ const routes: Routes = [
   { path: 'maymask', component:  MaymaskComponent},
   { path: 'manmay', component:  ManualmayComponent},
   { path: 'junetotal', component:  JunetotalComponent},
+  { path: 'juneamazon', component:  JunetotalComponent},
   { path: '',   redirectTo: '/home', pathMatch: 'full' }, // redirect to `first-component`
   { path: '**', component: HomeComponent },  // Wildcard route for a 404 page
 ];
