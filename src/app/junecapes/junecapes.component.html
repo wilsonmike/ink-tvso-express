@@ -1,1 +1,43 @@
-<p>junecapes works!</p>
+<app-navbar></app-navbar>
+<div class="container">
+    <div class="col-lg">
+        <div class="month-container">
+            <button class="btn btn-secondary month-btn" routerLink="/junetotal">Back</button>
+        </div>
+        <h6 class="store-header">Capes.com June Total</h6>
+        <h2 class="store-totalx">$256.00</h2>
+    </div>
+</div>
+<div class="container">
+    <h6 class="by-store">Amazon May Orders</h6>
+</div>
+<div class="container">
+    <div>
+        <input class="input" type="text" [(ngModel)]="term" placeholder="Search Order Number">
+      </div>
+    <div class="headers">
+        <span>Order Number</span>
+        <span>Item SKU</span>
+        <span>Item Quantity</span>
+        <span>Sum of Quantity</span>
+    </div>
+    <div class="main-table">
+            <div *ngFor="let item of juneCapes | filter:term ; let i = index">
+            <mat-card class="item-content">
+                <li class="order-list">{{item["Order - Number"]}}</li>
+                <li class="order-list">{{item["Item - SKU"]}}</li>
+                <li class="order-list">{{item["Item - Qty"]}}</li>
+                <li class="order-list">{{item["ItemPriceQty"]}}</li>
+            </mat-card>
+        </div>
+</div>
+
+<div class="footer">
+    <app-footer></app-footer>
+</div>
+
+
+
+
+
+
