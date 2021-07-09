@@ -51,6 +51,10 @@ import { JunetotalComponent } from './junetotal/junetotal.component';
 import { JuneamazonComponent } from './juneamazon/juneamazon.component';
 import { JunecapesComponent } from './junecapes/junecapes.component';
 import { JunetvsoComponent } from './junetvso/junetvso.component';
+import { JunemaskmarketComponent } from './junemaskmarket/junemaskmarket.component';
+import { JunecostumeagentComponent } from './junecostumeagent/junecostumeagent.component';
+import { JuneetsyComponent } from './juneetsy/juneetsy.component';
+import { JunemanualComponent } from './junemanual/junemanual.component';
 
 @NgModule({
   declarations: [
@@ -97,6 +101,10 @@ import { JunetvsoComponent } from './junetvso/junetvso.component';
     JuneamazonComponent,
     JunecapesComponent,
     JunetvsoComponent,
+    JunemaskmarketComponent,
+    JunecostumeagentComponent,
+    JuneetsyComponent,
+    JunemanualComponent,
   ],
   imports: [
     BrowserModule,

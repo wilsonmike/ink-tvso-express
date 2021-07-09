@@ -17,7 +17,14 @@ import { EtsyfebComponent } from './etsyfeb/etsyfeb.component';
 import { EtsymarchComponent } from './etsymarch/etsymarch.component';
 import { FebtotalComponent } from './febtotal/febtotal.component';
 import { HomeComponent } from './home/home.component';
+import { JuneamazonComponent } from './juneamazon/juneamazon.component';
+import { JunecapesComponent } from './junecapes/junecapes.component';
+import { JunecostumeagentComponent } from './junecostumeagent/junecostumeagent.component';
+import { JuneetsyComponent } from './juneetsy/juneetsy.component';
+import { JunemanualComponent } from './junemanual/junemanual.component';
+import { JunemaskmarketComponent } from './junemaskmarket/junemaskmarket.component';
 import { JunetotalComponent } from './junetotal/junetotal.component';
+import { JunetvsoComponent } from './junetvso/junetvso.component';
 import { ManualComponent } from './manual/manual.component';
 import { ManualfebComponent } from './manualfeb/manualfeb.component';
 import { ManualmayComponent } from './manualmay/manualmay.component';
@@ -76,7 +83,13 @@ const routes: Routes = [
   { path: 'maymask', component:  MaymaskComponent},
   { path: 'manmay', component:  ManualmayComponent},
   { path: 'junetotal', component:  JunetotalComponent},
-  { path: 'juneamazon', component:  JunetotalComponent},
+  { path: 'juneamazon', component:  JuneamazonComponent},
+  { path: 'junecapes', component:  JunecapesComponent},
+  { path: 'junetvso', component:  JunetvsoComponent},
+  { path: 'junemaskmarket', component:  JunemaskmarketComponent},
+  { path: 'junecostumeagent', component:  JunecostumeagentComponent},
+  { path: 'juneetsy', component:  JuneetsyComponent},
+  { path: 'junemanual', component:  JunemanualComponent},
   { path: '',   redirectTo: '/home', pathMatch: 'full' }, // redirect to `first-component`
   { path: '**', component: HomeComponent },  // Wildcard route for a 404 page
 ];
