@@ -1,0 +1,68 @@
+[
+    {
+      "Date - Order Date": "6/12/2021 2:43:34 AM",
+      "Market - Markeplace Name": "Shopify",
+      "Item - SKU": "AMZTVSO-PlanetSkull-3600-BLACK-XL",
+      "Order - Number": 187988,
+      "Item - Qty": 1,
+      "Item - Name": "AMZTVSO-NC-NC-DTG-PlanetSkull-3600-BLACK-XL",
+      "Market - Store Name": "TVStoreOnline",
+      "Item Price": 6.3,
+      "Total All": 39.5
+    },
+    {
+      "Date - Order Date": "6/12/2021 2:43:34 AM",
+      "Market - Markeplace Name": "Shopify",
+      "Item - SKU": "AMZTVSO-MagesticPanther-3600-BLACK-XL",
+      "Order - Number": 187988,
+      "Item - Qty": 1,
+      "Item - Name": "AMZTVSO-NC-NC-DTG-MagesticPanther-3600-BLACK-XL",
+      "Market - Store Name": "TVStoreOnline",
+      "Item Price": 6.3,
+      "Total All": ""
+    },
+    {
+      "Date - Order Date": "6/14/2021 5:34:48 AM",
+      "Market - Markeplace Name": "Shopify",
+      "Item - SKU": "AMZTVSO-BeastCoast-3600-HEATHERGREY-M",
+      "Order - Number": 188019,
+      "Item - Qty": 1,
+      "Item - Name": "AMZTVSO-NC-NC-DTG-BeastCoast-3600-HEATHERGREY-M",
+      "Market - Store Name": "TVStoreOnline",
+      "Item Price": 6.3,
+      "Total All": ""
+    },
+    {
+      "Date - Order Date": "6/9/2021 12:22:32 PM",
+      "Market - Markeplace Name": "eBay",
+      "Item - SKU": "220713-ChefCostumeKids-6/7T",
+      "Order - Number": "18-07182-03876",
+      "Item - Qty": 1,
+      "Item - Name": "Child Unisex Chef Jacket and Hat Halloween Costume",
+      "Market - Store Name": "Ebay",
+      "Item Price": 8,
+      "Total All": ""
+    },
+    {
+      "Date - Order Date": "6/11/2021 6:53:03 AM",
+      "Market - Markeplace Name": "ShipStation",
+      "Item - SKU": "CERT-DEFINED-WHT-S",
+      "Order - Number": "GCW#1090",
+      "Item - Qty": 1,
+      "Item - Name": "Certified Defined Hoodie - S / White",
+      "Market - Store Name": "GetCertifiedwear.com",
+      "Item Price": 6.3,
+      "Total All": ""
+    },
+    {
+      "Date - Order Date": "6/11/2021 6:53:03 AM",
+      "Market - Markeplace Name": "ShipStation",
+      "Item - SKU": "CERT-DEFINED-BLK-XL",
+      "Order - Number": "GCW#1090",
+      "Item - Qty": 1,
+      "Item - Name": "Certified Defined Hoodie - XL / Black",
+      "Market - Store Name": "GetCertifiedwear.com",
+      "Item Price": 6.3,
+      "Total All": ""
+    }
+  ]

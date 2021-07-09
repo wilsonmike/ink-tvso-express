@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import junecapesdata from '../junemm.json';
 
 @Component({
   selector: 'app-junemaskmarket',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./junemaskmarket.component.css']
 })
 export class JunemaskmarketComponent implements OnInit {
+  juneCapes: any = junecapesdata;
+  term = '';
 
   constructor() { }
 
