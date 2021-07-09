@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import junecapesdata from '../junemanualdata.json';
 
 @Component({
   selector: 'app-junemanual',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./junemanual.component.css']
 })
 export class JunemanualComponent implements OnInit {
+  juneCapes: any = junecapesdata;
+  term = '';
 
   constructor() { }
 
