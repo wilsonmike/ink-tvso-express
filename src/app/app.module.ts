@@ -55,6 +55,7 @@ import { JunemaskmarketComponent } from './junemaskmarket/junemaskmarket.compone
 import { JunecostumeagentComponent } from './junecostumeagent/junecostumeagent.component';
 import { JuneetsyComponent } from './juneetsy/juneetsy.component';
 import { JunemanualComponent } from './junemanual/junemanual.component';
+import { JulydoneComponent } from './julydone/julydone.component';
 
 @NgModule({
   declarations: [
@@ -105,6 +106,7 @@ import { JunemanualComponent } from './junemanual/junemanual.component';
     JunecostumeagentComponent,
     JuneetsyComponent,
     JunemanualComponent,
+    JulydoneComponent,
   ],
   imports: [
     BrowserModule,

@@ -17,6 +17,7 @@ import { EtsyfebComponent } from './etsyfeb/etsyfeb.component';
 import { EtsymarchComponent } from './etsymarch/etsymarch.component';
 import { FebtotalComponent } from './febtotal/febtotal.component';
 import { HomeComponent } from './home/home.component';
+import { JulydoneComponent } from './julydone/julydone.component';
 import { JuneamazonComponent } from './juneamazon/juneamazon.component';
 import { JunecapesComponent } from './junecapes/junecapes.component';
 import { JunecostumeagentComponent } from './junecostumeagent/junecostumeagent.component';
@@ -64,38 +65,39 @@ const routes: Routes = [
   { path: 'etsymarch', component: EtsymarchComponent },
   { path: 'tvsomarch', component: TvsomarchComponent },
   { path: 'marchtotal', component: MarchtotalComponent },
-  { path: 'costumeagentmarch', component:  CostumeagentmarchComponent},
-  { path: 'maskmarketmarch', component:  MaskmarketmarchComponent},
-  { path: 'manualordersmarch', component:  ManualordersmarchComponent},
-  { path: 'apriltotal', component:  ApriltotalComponent},
-  { path: 'amazonapril', component:  AprilamazonComponent},
-  { path: 'etsyapril', component:  ApriletsyComponent},
-  { path: 'tvsoapril', component:  ApriltvsoComponent},
-  { path: 'costumeapril', component:  AprilcostumeagentComponent},
-  { path: 'maskapril', component:  AprilmaskmarketComponent},
-  { path: 'manualorderapril', component:  ManualorderaprilComponent},
-  { path: 'mayamazon', component:  MayamazonComponent},
-  { path: 'maytotal', component:  MaytotalComponent},
-  { path: 'mayetsy', component:  MayetsyComponent},
-  { path: 'maytvso', component:  MaytvsoComponent},
-  { path: 'capesmay', component:  CapesmayComponent},
-  { path: 'wireless', component:  WirelessvisionComponent},
-  { path: 'maymask', component:  MaymaskComponent},
-  { path: 'manmay', component:  ManualmayComponent},
-  { path: 'junetotal', component:  JunetotalComponent},
-  { path: 'juneamazon', component:  JuneamazonComponent},
-  { path: 'junecapes', component:  JunecapesComponent},
-  { path: 'junetvso', component:  JunetvsoComponent},
-  { path: 'junemaskmarket', component:  JunemaskmarketComponent},
-  { path: 'junecostumeagent', component:  JunecostumeagentComponent},
-  { path: 'juneetsy', component:  JuneetsyComponent},
-  { path: 'junemanual', component:  JunemanualComponent},
-  { path: '',   redirectTo: '/home', pathMatch: 'full' }, // redirect to `first-component`
-  { path: '**', component: HomeComponent },  // Wildcard route for a 404 page
+  { path: 'costumeagentmarch', component: CostumeagentmarchComponent },
+  { path: 'maskmarketmarch', component: MaskmarketmarchComponent },
+  { path: 'manualordersmarch', component: ManualordersmarchComponent },
+  { path: 'apriltotal', component: ApriltotalComponent },
+  { path: 'amazonapril', component: AprilamazonComponent },
+  { path: 'etsyapril', component: ApriletsyComponent },
+  { path: 'tvsoapril', component: ApriltvsoComponent },
+  { path: 'costumeapril', component: AprilcostumeagentComponent },
+  { path: 'maskapril', component: AprilmaskmarketComponent },
+  { path: 'manualorderapril', component: ManualorderaprilComponent },
+  { path: 'mayamazon', component: MayamazonComponent },
+  { path: 'maytotal', component: MaytotalComponent },
+  { path: 'mayetsy', component: MayetsyComponent },
+  { path: 'maytvso', component: MaytvsoComponent },
+  { path: 'capesmay', component: CapesmayComponent },
+  { path: 'wireless', component: WirelessvisionComponent },
+  { path: 'maymask', component: MaymaskComponent },
+  { path: 'manmay', component: ManualmayComponent },
+  { path: 'junetotal', component: JunetotalComponent },
+  { path: 'juneamazon', component: JuneamazonComponent },
+  { path: 'junecapes', component: JunecapesComponent },
+  { path: 'junetvso', component: JunetvsoComponent },
+  { path: 'junemaskmarket', component: JunemaskmarketComponent },
+  { path: 'junecostumeagent', component: JunecostumeagentComponent },
+  { path: 'juneetsy', component: JuneetsyComponent },
+  { path: 'junemanual', component: JunemanualComponent },
+  { path: 'july', component: JulydoneComponent },
+  { path: '', redirectTo: '/home', pathMatch: 'full' }, // redirect to `first-component`
+  { path: '**', component: HomeComponent }, // Wildcard route for a 404 page
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

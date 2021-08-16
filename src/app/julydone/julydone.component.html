@@ -1,0 +1,423 @@
+<span #top></span>
+<app-navbar></app-navbar>
+
+<div class="container">
+  <div class="col-lg">
+    <div class="month-container">
+      <div class="dropdown">
+        <button
+          class="btn btn-secondary dropdown-toggle month-btn"
+          type="button"
+          id="dropdownMenuButton"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Change Month
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" routerLink="/home">January</a>
+          <a class="dropdown-item" routerLink="/febtotal">February</a>
+          <a class="dropdown-item" routerLink="/marchtotal">March</a>
+          <a class="dropdown-item" routerLink="/apriltotal">April</a>
+          <a class="dropdown-item" routerLink="/maytotal">May</a>
+          <a class="dropdown-item" routerLink="/junetotal">June</a>
+          <a class="dropdown-item" routerLink="/july">July</a>
+        </div>
+      </div>
+    </div>
+    <a class="store-link" href="#footer"
+      ><h6 class="store-header">July Total</h6></a
+    >
+
+    <h2 class="store-totalx">$7,419.47</h2>
+  </div>
+</div>
+<div class="container">
+  <h6 class="by-store">July By Store</h6>
+</div>
+
+<div class="container master">
+  <div class="container">
+    <div class="row">
+      <div class="col-md">
+        <div class="arrow">
+          <a class="store-link" (click)="scroll(amazon)"
+            ><h6 class="store-header">Amazon</h6></a
+          >
+          <img class="r-arrow" src="./assets/rightarrow.svg" alt="" />
+        </div>
+        <h2 class="store-total">$7,061.82</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="col-md">
+        <div class="arrow">
+          <a class="store-link" (click)="scroll(capes)"
+            ><h6 class="store-header">Capes.com</h6></a
+          >
+          <img class="r-arrow" src="./assets/rightarrow.svg" alt="" />
+        </div>
+        <h2 class="store-total">$128.00</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="col-md">
+        <div class="arrow">
+          <a class="store-link" (click)="scroll(costumeagent)"
+            ><h6 class="store-header">Costume Agent</h6></a
+          >
+          <img class="r-arrow" src="./assets/rightarrow.svg" alt="" />
+        </div>
+        <h2 class="store-total">$4.90</h2>
+        <div class="divider"></div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md">
+        <div class="arrow">
+          <a class="store-link" click="scroll(ebay)"
+            ><h6 class="store-header">Ebay</h6></a
+          >
+          <img class="r-arrow" src="./assets/rightarrow.svg" alt="" />
+        </div>
+        <h2 class="store-total">$8.00</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="col-md">
+        <div class="arrow">
+          <a class="store-link" (click)="scroll(etsy)"
+            ><h6 class="store-header">Etsy Sugar Plum</h6></a
+          >
+          <img class="r-arrow" src="./assets/rightarrow.svg" alt="" />
+        </div>
+
+        <h2 class="store-total">$140.00</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="col-md">
+        <div class="arrow">
+          <a class="store-link" (click)="scroll(maskmarket)"
+            ><h6 class="store-header">Mask Market</h6></a
+          >
+          <img class="r-arrow" src="./assets/rightarrow.svg" alt="" />
+        </div>
+
+        <h2 class="store-total">$60.75</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="col-md">
+        <div class="arrow">
+          <a class="store-link" (click)="scroll(walmart)"
+            ><h6 class="store-header">WalMart</h6></a
+          >
+          <img class="r-arrow" src="./assets/rightarrow.svg" alt="" />
+        </div>
+
+        <h2 class="store-total">$8.00</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="col-md">
+        <div class="arrow">
+          <a class="store-link" (click)="scroll(tvso)"
+            ><h6 class="store-header">WalMart</h6></a
+          >
+          <img class="r-arrow" src="./assets/rightarrow.svg" alt="" />
+        </div>
+
+        <h2 class="store-total">$8.00</h2>
+        <div class="divider"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div #amazon class="col-lg">
+    <div class="month-container">
+      <button class="btn btn-secondary month-btn" (click)="scroll(top)">
+        Top
+      </button>
+    </div>
+    <h6 class="store-header">Amazon July Data</h6>
+    <h2 class="store-totalx">$7,061.82</h2>
+  </div>
+</div>
+<div class="container">
+  <h6 class="by-store">Amazon July Data</h6>
+</div>
+<div class="container">
+  <div>
+    <input
+      class="input"
+      type="text"
+      [(ngModel)]="term"
+      placeholder="Search Order Number"
+    />
+  </div>
+  <div class="headers">
+    <span>Order Number</span>
+    <span>Item SKU</span>
+    <span>Item Quantity</span>
+    <span>Sum of Quantity</span>
+  </div>
+  <div class="main-table">
+    <div *ngFor="let item of julyAmazonData | filter: term; let i = index">
+      <mat-card class="item-content">
+        <li class="order-list">{{ item["Order - Number"] }}</li>
+        <li class="order-list">{{ item["Item - SKU"] }}</li>
+        <li class="order-list">{{ item["Item - Qty"] }}</li>
+        <li class="order-list">{{ item["Item Price"] }}</li>
+      </mat-card>
+    </div>
+  </div>
+
+  <div #capes class="container">
+    <h6 class="by-store">Capes.com</h6>
+  </div>
+
+  <div class="container">
+    <div>
+      <input
+        class="input"
+        type="text"
+        [(ngModel)]="term"
+        placeholder="Search Order Number"
+      />
+    </div>
+    <div class="month-container">
+      <button class="btn btn-secondary month-btn" (click)="scroll(top)">
+        Top
+      </button>
+    </div>
+    <div class="headers">
+      <span>Order Number</span>
+      <span>Item SKU</span>
+      <span>Item Quantity</span>
+      <span>Sum of Quantity</span>
+    </div>
+    <div class="main-table">
+      <div *ngFor="let item of julyCapesData | filter: term; let i = index">
+        <mat-card class="item-content">
+          <li class="order-list">{{ item["Order - Number"] }}</li>
+          <li class="order-list">{{ item["Item - SKU"] }}</li>
+          <li class="order-list">{{ item["Item - Qty"] }}</li>
+          <li class="order-list">{{ item["Item Price"] }}</li>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+
+  <div #costumeagent class="container">
+    <h6 class="by-store">Costume Agent</h6>
+  </div>
+  <div class="container">
+    <div>
+      <input
+        class="input"
+        type="text"
+        [(ngModel)]="term"
+        placeholder="Search Order Number"
+      />
+    </div>
+    <div class="month-container">
+      <button class="btn btn-secondary month-btn" (click)="scroll(top)">
+        Top
+      </button>
+    </div>
+    <div class="headers">
+      <span>Order Number</span>
+      <span>Item SKU</span>
+      <span>Item Quantity</span>
+      <span>Sum of Quantity</span>
+    </div>
+    <div class="main-table">
+      <div *ngFor="let item of julyCostumeData | filter: term; let i = index">
+        <mat-card class="item-content">
+          <li class="order-list">{{ item["Order - Number"] }}</li>
+          <li class="order-list">{{ item["Item - SKU"] }}</li>
+          <li class="order-list">{{ item["Item - Qty"] }}</li>
+          <li class="order-list">{{ item["Item Price"] }}</li>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+
+  <div #ebay class="container">
+    <h6 class="by-store">Ebay</h6>
+  </div>
+  <div class="container">
+    <div>
+      <input
+        class="input"
+        type="text"
+        [(ngModel)]="term"
+        placeholder="Search Order Number"
+      />
+    </div>
+    <div class="month-container">
+      <button class="btn btn-secondary month-btn" (click)="scroll(top)">
+        Top
+      </button>
+    </div>
+    <div class="headers">
+      <span>Order Number</span>
+      <span>Item SKU</span>
+      <span>Item Quantity</span>
+      <span>Sum of Quantity</span>
+    </div>
+    <div class="main-table">
+      <div *ngFor="let item of julyEbayData | filter: term; let i = index">
+        <mat-card class="item-content">
+          <li class="order-list">{{ item["Order - Number"] }}</li>
+          <li class="order-list">{{ item["Item - SKU"] }}</li>
+          <li class="order-list">{{ item["Item - Qty"] }}</li>
+          <li class="order-list">{{ item["Item Price"] }}</li>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+
+  <div #etsy class="container">
+    <h6 class="by-store">Etsy Sugar Plum</h6>
+  </div>
+  <div class="container">
+    <div>
+      <input
+        class="input"
+        type="text"
+        [(ngModel)]="term"
+        placeholder="Search Order Number"
+      />
+    </div>
+    <div class="month-container">
+      <button class="btn btn-secondary month-btn" (click)="scroll(top)">
+        Top
+      </button>
+    </div>
+    <div class="headers">
+      <span>Order Number</span>
+      <span>Item SKU</span>
+      <span>Item Quantity</span>
+      <span>Sum of Quantity</span>
+    </div>
+    <div class="main-table">
+      <div *ngFor="let item of julyEtsyData | filter: term; let i = index">
+        <mat-card class="item-content">
+          <li class="order-list">{{ item["Order - Number"] }}</li>
+          <li class="order-list">{{ item["Item - SKU"] }}</li>
+          <li class="order-list">{{ item["Item - Qty"] }}</li>
+          <li class="order-list">{{ item["Item Price"] }}</li>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+
+  <div #maskmarket class="container">
+    <h6 class="by-store">Mask Market</h6>
+  </div>
+  <div class="container">
+    <div>
+      <input
+        class="input"
+        type="text"
+        [(ngModel)]="term"
+        placeholder="Search Order Number"
+      />
+    </div>
+    <div class="month-container">
+      <button class="btn btn-secondary month-btn" (click)="scroll(top)">
+        Top
+      </button>
+    </div>
+    <div class="headers">
+      <span>Order Number</span>
+      <span>Item SKU</span>
+      <span>Item Quantity</span>
+      <span>Sum of Quantity</span>
+    </div>
+    <div class="main-table">
+      <div *ngFor="let item of julyMaskData | filter: term; let i = index">
+        <mat-card class="item-content">
+          <li class="order-list">{{ item["Order - Number"] }}</li>
+          <li class="order-list">{{ item["Item - SKU"] }}</li>
+          <li class="order-list">{{ item["Item - Qty"] }}</li>
+          <li class="order-list">{{ item["Item Price"] }}</li>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+
+  <div #walmart class="container">
+    <h6 class="by-store">WalMart</h6>
+  </div>
+  <div class="container">
+    <div>
+      <input
+        class="input"
+        type="text"
+        [(ngModel)]="term"
+        placeholder="Search Order Number"
+      />
+    </div>
+    <div class="month-container">
+      <button class="btn btn-secondary month-btn" (click)="scroll(top)">
+        Top
+      </button>
+    </div>
+    <div class="headers">
+      <span>Order Number</span>
+      <span>Item SKU</span>
+      <span>Item Quantity</span>
+      <span>Sum of Quantity</span>
+    </div>
+    <div class="main-table">
+      <div *ngFor="let item of julyWalmartData | filter: term; let i = index">
+        <mat-card class="item-content">
+          <li class="order-list">{{ item["Order - Number"] }}</li>
+          <li class="order-list">{{ item["Item - SKU"] }}</li>
+          <li class="order-list">{{ item["Item - Qty"] }}</li>
+          <li class="order-list">{{ item["Item Price"] }}</li>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+
+  <div #tvso class="container">
+    <h6 class="by-store">TVSO</h6>
+  </div>
+  <div class="container">
+    <div>
+      <input
+        class="input"
+        type="text"
+        [(ngModel)]="term"
+        placeholder="Search Order Number"
+      />
+    </div>
+    <div class="month-container">
+      <button class="btn btn-secondary month-btn" (click)="scroll(top)">
+        Top
+      </button>
+    </div>
+    <div class="headers">
+      <span>Order Number</span>
+      <span>Item SKU</span>
+      <span>Item Quantity</span>
+      <span>Sum of Quantity</span>
+    </div>
+    <div class="main-table">
+      <div *ngFor="let item of julyTvsoData | filter: term; let i = index">
+        <mat-card class="item-content">
+          <li class="order-list">{{ item["Order - Number"] }}</li>
+          <li class="order-list">{{ item["Item - SKU"] }}</li>
+          <li class="order-list">{{ item["Item - Qty"] }}</li>
+          <li class="order-list">{{ item["Item Price"] }}</li>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <app-footer></app-footer>
+  </div>
+</div>
